@@ -1,0 +1,13 @@
+.main-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+
+  &:hover {
+    color: white;
+  }
+}
