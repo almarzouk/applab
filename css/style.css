@@ -28,11 +28,20 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid green;
 }
 
 html {
   font-size: 62.5%;
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 544px) {
+  html {
+    font-size: 40%;
+  }
 }
 
 body {
@@ -683,12 +692,18 @@ a {
   color: var(--sec-color);
   max-width: 400px;
 }
-@media only screen and (max-width: 767px) {
+@media (max-width:991px) {
   .price .cards {
     margin-right: 0;
-
   }
 }
+@media (max-width:767px) {
+  .price .cards {
+margin-bottom: 2rem;
+  }
+}
+
+
 .price .cards .header {
   padding: 2rem 5rem;
   background-color: #f6f8fa;
@@ -742,9 +757,23 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .client .container {
+    max-width: 100%;
+  }
+  .client .container .box{
+    max-width: 100%;
+  }
+  .client .container .box h2{
     margin-bottom: 5 rem;
+    text-align: center;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  .client .container .box p{
+    text-align: center;
+    padding: 0 !important;
+    max-width: 100% !important;
   }
 }
 .client .container .box {
@@ -756,6 +785,7 @@ a {
   max-width: 450px;
   padding: 4rem 0;
 }
+
 .client .container .box > p {
   font-size: 1.6rem;
   max-width: 450px;
@@ -853,6 +883,18 @@ a {
     max-width: 100%;
   }
 }
+@media (max-width:991px) {
+  .accordion .container__1 h5 {
+    max-width: 100% !important;
+    text-align: center;
+
+  }
+
+  .accordion .container__1 p {
+    max-width: 100% !important;
+    text-align: center;
+  }
+}
 
 .accordion .container {
   width: 900px;
@@ -901,15 +943,28 @@ a {
       flex-direction: column;
       align-items: center;
   }
+  .download .main__photo {
+    max-width: 600px;
+  }
+  .download p {
+    max-width: 100% !important;
+    text-align: center;
+  }
+  .download h1 {
+    max-width: 100% !important;
+    text-align: center;
+  }
+
+}
+@media only screen and (max-width: 324px) {
+  .download .images img{
+    max-width: 100px !important;
+  }
 }
 .download .main__photo {
   max-width: 800px;
 }
-@media (max-width:1199px) {
-  .download .main__photo {
-    max-width: 600px;
-  }
-}
+
 .download h1 {
   font-size: 4rem;
   color: var(--sec-color);
